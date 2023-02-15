@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_item")
 public class Item {
@@ -16,46 +15,43 @@ public class Item {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Integer idItem;
-	
-	public Integer numeroItem;
+	public Integer id;
+	public Integer numero;
 	@OneToOne
-	public Produto produtosItem;
-	public	BigDecimal quantidadeItem;
-	public BigDecimal valorItem;
+	public Produto produtos;
+	public	BigDecimal quantidade;
+	public BigDecimal valor;
 	
 	
-	public Integer getIdItem() {
-		return idItem;
+	public Integer getId() {
+		return id;
 	}
-
-	public void setIdItem(Integer idItem) {
-		this.idItem = idItem;
+	public void setId(Integer id) {
+		this.id = id;
 	}
-
-	public Integer getNumeroItem() {
-		return numeroItem;
+	public Integer getNumero() {
+		return numero;
 	}
-	public void setNumeroItem(Integer numeroItem) {
-		this.numeroItem = numeroItem;
+	public void setNumero(Integer numero) {
+		this.numero = numero;
 	}
-	public Produto getProdutosItem() {
-		return produtosItem;
+	public Produto getProdutos() {
+		return produtos;
 	}
-	public void setProdutosItem(Produto produtosItem) {
-		this.produtosItem = produtosItem;
+	public void setProdutos(Produto produtos) {
+		this.produtos = produtos;
 	}
-	public BigDecimal getQuantidadeItem() {
-		return quantidadeItem;
+	public BigDecimal getQuantidade() {
+		return quantidade;
 	}
-	public void setQuantidadeItem(BigDecimal quantidadeItem) {
-		this.quantidadeItem = quantidadeItem;
+	public void setQuantidade(BigDecimal quantidade) {
+		this.quantidade = quantidade;
 	}
-	public BigDecimal getValorItem() {
-		return valorItem;
+	public BigDecimal getValor() {
+		return valor;
 	}
-	public void setValorItem(BigDecimal valorItem) {
-		this.valorItem = valorItem;
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
 	}
 	
 }

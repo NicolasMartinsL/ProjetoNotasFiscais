@@ -15,57 +15,52 @@ public class Nota {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Integer idNotas;
-	
-	public	Integer numeroNota;
-	public String dataNota;
-	public Double valorNota;
+	public Integer id;
+	public	Integer numero;
+	public String data;
+	public Double valor;
 	@ManyToOne
-	public	Cliente clienteNota;
+	public	Cliente cliente;
 	//@Embedded
 	@OneToOne
-	public Item itensNota;
-
+	public Item itens;
 	
-	public Integer getIdNotas() {
-		return idNotas;
-	}
-
-	public void setIdNotas(Integer idNotas) {
-		this.idNotas = idNotas;
-	}
-
-	public Integer getNumeroNota() {
-		return numeroNota;
-	}
-	public void setNumeroNota(Integer numeroNota) {
-		this.numeroNota = numeroNota;
-	}
-	public String getDataNota() {
-		return dataNota;
-	}
-
-	public void setDataNota(String dataNota) {
-		this.dataNota = dataNota;
-	}
-
-	public Double getValorNota() {
-		return valorNota;
-	}
-	public void setValorNota(Double valorNota) {
-		this.valorNota = valorNota;
-	}
-	public Cliente getClienteNota() {
-		return clienteNota;
-	}
-	public void setClienteNota(Cliente clienteNota) {
-		this.clienteNota = clienteNota;
-	}
-	public Item getItensNota() {
-		return itensNota;
-	}
-	public void setItensNota(Item itensNota) {
-		this.itensNota = itensNota;
-	}
 	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Integer getNumero() {
+		return numero;
+	}
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
+	}
+	public Double getValor() {
+		return valor;
+	}
+	public void setValor(Double valor) {
+		this.valor = valor;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	public Item getItens() {
+		return itens;
+	}
+	public void setItens(Item itens) {
+		this.itens = itens;
+	}
+
 }

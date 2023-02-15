@@ -14,38 +14,35 @@ public class Produto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Integer idProduto;
+	public Integer id;
+	public Integer codigo;
+	public String descricao;
+	public BigDecimal valor;
 	
-	public Integer codigoProduto;
-	public String descricaoProduto;
-	public BigDecimal valorProduto;
 	
-	
-	public Integer getIdProduto() {
-		return idProduto;
+	public Integer getId() {
+		return id;
 	}
-
-	public void setIdProduto(Integer idProduto) {
-		this.idProduto = idProduto;
+	public void setId(Integer id) {
+		this.id = id;
 	}
-
-	public Integer getCodigoProduto() {
-		return codigoProduto;
+	public Integer getCodigo() {
+		return codigo;
 	}
-	public void setCodigoProduto(Integer codigoProduto) {
-		this.codigoProduto = codigoProduto;
+	public void setCodigo(Integer codigo) {
+		this.codigo = codigo;
 	}
-	public String getDescricaoProduto() {
-		return descricaoProduto;
+	public String getDescricao() {
+		return descricao;
 	}
-	public void setDescricaoProduto(String descricaoProduto) {
-		this.descricaoProduto = descricaoProduto;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
-	public BigDecimal getValorProduto() {
-		return valorProduto;
+	public BigDecimal getValor() {
+		return valor;
 	}
-	public void setValorProduto(BigDecimal valorProduto) {
-		this.valorProduto = valorProduto;
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
 	}
 	
 }
